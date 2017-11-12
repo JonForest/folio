@@ -7,6 +7,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('pipeline', function() {
+    this.route('main');
+    this.route('what-if');
+  });
 });
 
 export default Router;
